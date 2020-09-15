@@ -40,22 +40,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="ini commit hibernate 2">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
-    </list>
+    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +203,7 @@
       <workItem from="1600083192108" duration="6712000" />
       <workItem from="1600091757177" duration="10870000" />
       <workItem from="1600155648632" duration="6315000" />
-      <workItem from="1600163405221" duration="17204000" />
+      <workItem from="1600163405221" duration="17343000" />
     </task>
     <task id="LOCAL-00001" summary="ini commit">
       <created>1599652733163</created>
@@ -255,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600181462131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ini commit hibernate 2">
+      <created>1600186227988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600186227988</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,10 +279,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="846" y="411" key="#Assign_Data_Sources/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600162145875" />
-    <state x="124" y="362" key="#SQL_Dialects" timestamp="1600081818553">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2044" y="362" key="#SQL_Dialects" timestamp="1600186353978">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="124" y="362" key="#SQL_Dialects/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600081818553" />
+    <state x="2044" y="362" key="#SQL_Dialects/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186353978" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600081666435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -300,11 +293,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="221" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600167644805" />
-    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600186107754">
+    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600186225337">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600173110295" />
-    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107754" />
+    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186225337" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1600181080012">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -360,11 +353,11 @@
     </state>
     <state x="440" y="94" width="1073" height="710" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174560567" />
     <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186213047" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600181466897">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600186239908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174748321" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181466897" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186239908" />
     <state x="2779" y="403" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1599545662244">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
