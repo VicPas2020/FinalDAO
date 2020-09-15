@@ -44,6 +44,7 @@ public class UserDaoHibernateImpl implements UserDao {
                     "lastName VARCHAR(20) NOT NULL, " +
                     "age TINYINT NOT NULL DEFAULT 0, PRIMARY KEY (id) ) ";
 
+            String s2 = "ALTER TABLE new_table3 MODIFY COLUMN id INT auto_increment";
 
         //GENERATED ALWAYS AS IDENTITY
             // ENGINE=InnoDB
@@ -53,6 +54,7 @@ public class UserDaoHibernateImpl implements UserDao {
 //            q.executeUpdate();
 
             session.createNativeQuery(query).executeUpdate();
+            session.createNativeQuery(s2).executeUpdate();
 //            session.createSQLQuery(query).executeUpdate();
 //            session.createQuery(query).executeUpdate();
 
