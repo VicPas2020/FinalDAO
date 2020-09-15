@@ -40,7 +40,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="" />
+    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6f3da0d-99df-4662-aea2-ea83baaf8fd1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6f3da0d-99df-4662-aea2-ea83baaf8fd1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +111,7 @@
     <property name="project.structure.side.proportion" value="0.5011494" />
     <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="CoreTaskTemplate" />
@@ -167,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.removeUserById" />
         <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
@@ -203,7 +213,7 @@
       <workItem from="1600083192108" duration="6712000" />
       <workItem from="1600091757177" duration="10870000" />
       <workItem from="1600155648632" duration="6315000" />
-      <workItem from="1600163405221" duration="17343000" />
+      <workItem from="1600163405221" duration="18781000" />
     </task>
     <task id="LOCAL-00001" summary="ini commit">
       <created>1599652733163</created>
@@ -247,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600186227988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Dialect">
+      <created>1600186442002</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600186442002</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Dialect + empty line 01">
+      <created>1600186568364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600186568364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +296,9 @@
     <MESSAGE value="ini commit" />
     <MESSAGE value="ini commit hibernate" />
     <MESSAGE value="ini commit hibernate 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ini commit hibernate 2" />
+    <MESSAGE value="Dialect" />
+    <MESSAGE value="Dialect + empty line 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dialect + empty line 01" />
   </component>
   <component name="WindowStateProjectService">
     <state x="846" y="411" key="#Assign_Data_Sources" timestamp="1600162145875">
@@ -293,41 +319,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="221" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600167644805" />
-    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600186225337">
+    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600186566810">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600173110295" />
-    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186225337" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1600181080012">
+    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186566810" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1600187129895">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600173466865" />
-    <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181080012" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187129895" />
     <state x="2713" y="418" key="Github.ShareDialog" timestamp="1600181358927">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="793" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599653559211" />
     <state x="2713" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181358927" />
-    <state width="1879" height="334" key="GridCell.Tab.0.bottom" timestamp="1600186107823">
+    <state width="1879" height="334" key="GridCell.Tab.0.bottom" timestamp="1600187787287">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="334" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
-    <state width="1879" height="334" key="GridCell.Tab.0.center" timestamp="1600186107823">
+    <state width="1879" height="334" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187787287" />
+    <state width="1879" height="334" key="GridCell.Tab.0.center" timestamp="1600187787287">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="334" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
-    <state width="1879" height="334" key="GridCell.Tab.0.left" timestamp="1600186107823">
+    <state width="1879" height="334" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187787287" />
+    <state width="1879" height="334" key="GridCell.Tab.0.left" timestamp="1600187787286">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="334" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
-    <state width="1879" height="334" key="GridCell.Tab.0.right" timestamp="1600186107823">
+    <state width="1879" height="334" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187787286" />
+    <state width="1879" height="334" key="GridCell.Tab.0.right" timestamp="1600187787287">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="334" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
+    <state width="1879" height="334" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187787287" />
     <state width="1879" height="247" key="GridCell.Tab.1.bottom" timestamp="1600091352111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -348,11 +374,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="286" height="457" key="HiddenNamespacesPopup/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600081682145" />
-    <state x="2360" y="94" width="1073" height="710" key="SettingsEditor" timestamp="1600186213047">
+    <state x="2360" y="94" width="1073" height="710" key="SettingsEditor" timestamp="1600187827160">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" width="1073" height="710" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174560567" />
-    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186213047" />
+    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187827160" />
+    <state width="281" height="441" key="SqlResolveConfigurable" timestamp="1600186594777">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="281" height="441" key="SqlResolveConfigurable/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186594777" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600186239908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -363,6 +393,10 @@
     </state>
     <state x="859" y="403" key="com.intellij.database.actions.DdlActions$CreateObject$1/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599211429920" />
     <state x="2779" y="403" key="com.intellij.database.actions.DdlActions$CreateObject$1/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1599545662244" />
+    <state x="2716" y="226" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600187574655">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2716" y="226" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187574655" />
     <state x="664" y="411" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599211292696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

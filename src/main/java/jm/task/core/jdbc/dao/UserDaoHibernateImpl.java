@@ -29,7 +29,7 @@ public class UserDaoHibernateImpl implements UserDao {
                     "lastName VARCHAR(20) NOT NULL, " +
                     "age TINYINT NOT NULL DEFAULT 0, PRIMARY KEY (id) ) ";
             // Не смог найти как создать таблицу сразу с авто-инкрементом
-            String query2 = "ALTER TABLE new_table3 MODIFY COLUMN id INT auto_increment";
+            //String query2 = "ALTER TABLE new_table3 MODIFY COLUMN id INT auto_increment";
 
             // это были варианты....
             //GENERATED ALWAYS AS IDENTITY
@@ -44,7 +44,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             // ТАк и не понял разницу между createQuery.createSQLQuery.createNativeQuery
             session.createNativeQuery(query).executeUpdate();
-            session.createNativeQuery(query2).executeUpdate();
+            //session.createNativeQuery(query2).executeUpdate();
             session.getTransaction().commit();
         }
      }
