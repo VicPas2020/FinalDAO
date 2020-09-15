@@ -40,8 +40,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="ini commit hibernate">
+    <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="ini commit hibernate 2">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +114,22 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5011494" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
+      <module name="CoreTaskTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jm.task.core.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -154,23 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoreTaskTemplate" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="saveUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.removeUserById" />
         <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
-        <item itemvalue="JUnit.UserServiceTest.saveUser" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +218,7 @@
       <workItem from="1600083192108" duration="6712000" />
       <workItem from="1600091757177" duration="10870000" />
       <workItem from="1600155648632" duration="6315000" />
-      <workItem from="1600163405221" duration="12467000" />
+      <workItem from="1600163405221" duration="17204000" />
     </task>
     <task id="LOCAL-00001" summary="ini commit">
       <created>1599652733163</created>
@@ -232,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600180644796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ini commit hibernate 2">
+      <created>1600181462131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600181462131</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +279,8 @@
     </ignored-roots>
     <MESSAGE value="ini commit" />
     <MESSAGE value="ini commit hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="ini commit hibernate" />
+    <MESSAGE value="ini commit hibernate 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ini commit hibernate 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="846" y="411" key="#Assign_Data_Sources" timestamp="1600162145875">
@@ -276,11 +300,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="221" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600167644805" />
-    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600181114155">
+    <state x="2416" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600186107754">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600173110295" />
-    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181114155" />
+    <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107754" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1600181080012">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -291,22 +315,26 @@
     </state>
     <state x="793" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599653559211" />
     <state x="2713" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181358927" />
-    <state width="1879" height="320" key="GridCell.Tab.0.bottom" timestamp="1600174435486">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1879" height="334" key="GridCell.Tab.0.bottom" timestamp="1600186107823">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="320" key="GridCell.Tab.0.center" timestamp="1600174435486">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1879" height="334" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
+    <state width="1879" height="334" key="GridCell.Tab.0.center" timestamp="1600186107823">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="320" key="GridCell.Tab.0.left" timestamp="1600174435486">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1879" height="334" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
+    <state width="1879" height="334" key="GridCell.Tab.0.left" timestamp="1600186107823">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
-    <state width="1879" height="320" key="GridCell.Tab.0.right" timestamp="1600174435486">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1879" height="334" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
+    <state width="1879" height="334" key="GridCell.Tab.0.right" timestamp="1600186107823">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="320" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174435486" />
+    <state width="1879" height="334" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186107823" />
     <state width="1879" height="247" key="GridCell.Tab.1.bottom" timestamp="1600091352111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -327,16 +355,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="286" height="457" key="HiddenNamespacesPopup/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600081682145" />
-    <state x="2360" y="94" width="1073" height="710" key="SettingsEditor" timestamp="1600180715126">
+    <state x="2360" y="94" width="1073" height="710" key="SettingsEditor" timestamp="1600186213047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" width="1073" height="710" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174560567" />
-    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600180715126" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600181116642">
+    <state x="2360" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186213047" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600181466897">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600174748321" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181116642" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181466897" />
     <state x="2779" y="403" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1599545662244">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -346,10 +374,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="411" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599211292696" />
-    <state x="571" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599983175581">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2491" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600181599495">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="571" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599983175581" />
+    <state x="2491" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181599495" />
     <state x="643" y="130" width="634" height="780" key="find.popup" timestamp="1600103541976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

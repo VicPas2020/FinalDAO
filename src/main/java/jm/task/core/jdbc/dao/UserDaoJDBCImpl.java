@@ -11,7 +11,6 @@ public class UserDaoJDBCImpl implements UserDao {
     private final String table_name = "new_table3";
 
     public UserDaoJDBCImpl() {
-
     }
 
     public void createUsersTable() {
@@ -33,11 +32,11 @@ public class UserDaoJDBCImpl implements UserDao {
         String ll = ", ";
 
         String query =  "INSERT INTO " +table_name +
-                " VALUES ("+ (counter()+1) + ll  +
-                l + name     + l + ll +
-                l + lastName + l + ll +
+                " VALUES ("+
+                (counter() +1) + ll  +
+                l + name       + l   + ll +
+                l + lastName   + l   + ll +
                 age + ")";
-
         connectUpdate(query);
         System.out.println("User с именем – "+name+" добавлен в базу данных");
     }
@@ -51,6 +50,7 @@ public class UserDaoJDBCImpl implements UserDao {
         List<User> list ;
         String query = "SELECT * FROM "+table_name;
         list = connectSelect(query);
+        System.out.println(list);
         return list;
     }
 
