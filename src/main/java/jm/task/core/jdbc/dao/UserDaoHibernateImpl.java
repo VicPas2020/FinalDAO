@@ -24,20 +24,7 @@ public class UserDaoHibernateImpl implements UserDao {
             session.beginTransaction();
 
 // CREATE
-            
-            
-//            String query =
-//                    "CREATE TABLE IF NOT EXISTS comments" +
-//                            "(    id INT  DEFAULT 1," +
-//                            "     name varchar(30)," +
-//                            "     lastName varchar(100)," +
-//                            "     com_no int" +
-//                            ");";
 
-
-
-
-            
             String query = "CREATE TABLE IF NOT EXISTS " + table_name +
                     " (id INT NOT NULL AUTO_INCREMENT, " +
                     "name VARCHAR(20) NOT NULL, " +
