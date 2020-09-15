@@ -16,9 +16,10 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void createUsersTable() {
         String query = "CREATE TABLE IF NOT EXISTS " + table_name +
-                " (id INT NOT NULL, name VARCHAR(20), " +
-                "lastName VARCHAR(20), " +
-                "age TINYINT DEFAULT 0, PRIMARY KEY (id))";
+                " (id INT NOT NULL, " +
+                "name VARCHAR(20), " +
+                "lastName VARCHAR(20) NOT NULL, " +
+                "age TINYINT NOT NULL DEFAULT 0, PRIMARY KEY (id) )";
         connectUpdate(query);
     }
 
@@ -32,10 +33,10 @@ public class UserDaoJDBCImpl implements UserDao {
         String ll = ", ";
 
         String query =  "INSERT INTO " +table_name +
-                " VALUES ("+ (counter()+1) + ", "  +
-                l+name+l +", "+
-                l+lastName+l +", "+
-                age+")";
+                " VALUES ("+ (counter()+1) + ll  +
+                l + name     + l + ll +
+                l + lastName + l + ll +
+                age + ")";
 
         connectUpdate(query);
         System.out.println("User с именем – "+name+" добавлен в базу данных");

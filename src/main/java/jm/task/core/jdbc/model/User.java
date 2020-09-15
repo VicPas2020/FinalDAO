@@ -1,12 +1,28 @@
 package jm.task.core.jdbc.model;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
 
-@Table
+import javax.persistence.*;
+
+import static org.hibernate.id.PersistentIdentifierGenerator.PK;
+import static org.hibernate.id.PersistentIdentifierGenerator.TABLE;
+
+@Entity
+@Table (name="new_table3")
 public class User {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//(generator = PK) // strategy = GenerationType.AUTO
+//    @GeneratedValue(generator = "sequence-generator")
+//    @GenericGenerator(
+//            name = "sequence-generator",
+//            strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+//            parameters = {
+//                    @Parameter(name = "sequence_name", value = "user_sequence"),
+//                    @Parameter(name = "initial_value", value = "4"),
+//                    @Parameter(name = "increment_size", value = "1")
+//            } )
+
     private Long id;
 
     @Column

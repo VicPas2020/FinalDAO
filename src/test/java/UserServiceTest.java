@@ -29,6 +29,7 @@ public class UserServiceTest {
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
+            userService.createUsersTable();
         } catch (Exception e) {
             Assert.fail("При тестировании создания таблицы пользователей произошло исключение\n" + e.getMessage());
         }
@@ -37,18 +38,18 @@ public class UserServiceTest {
     @Test
     public void saveUser() {
         try {
-            userService.dropUsersTable();
+            //userService.dropUsersTable();
             userService.createUsersTable();
             userService.saveUser(testName, testLastName, testAge);
 
             User user = userService.getAllUsers().get(0);
 
-            /*if (!testName.equals(user.getName())
+            if (!testName.equals(user.getName())
                     || !testLastName.equals(user.getLastName())
                     || testAge != user.getAge()
             ) {
                 Assert.fail("User был некорректно добавлен в базу данных");
-            }*/
+            }
 
         } catch (Exception e) {
             Assert.fail("Во время тестирования сохранения пользователя произошло исключение\n" + e);
