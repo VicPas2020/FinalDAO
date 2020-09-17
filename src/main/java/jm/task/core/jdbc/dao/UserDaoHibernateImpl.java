@@ -74,7 +74,10 @@ public class UserDaoHibernateImpl implements UserDao {
             a.setLastName(lastName);
             a.setAge(age);
 
-            session.saveOrUpdate(a);
+            //session.saveOrUpdate(a);
+//            session.persist(a);
+            session.save(a);
+
             session.getTransaction().commit();
         }
     }
