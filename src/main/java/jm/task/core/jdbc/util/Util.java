@@ -117,12 +117,12 @@ public class Util {
                     //settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver"); //AvailableSettings
 
                     // какая разница AvailableSettings & Environment
-                    settings.put(AvailableSettings.URL, "jdbc:mysql://localhost:3306/my_schema?useSSL=false");
+                    settings.put(Environment.URL, "jdbc:mysql://localhost:3306/my_schema?useSSL=false");
                     settings.put(Environment.USER, "root");
                     settings.put(Environment.PASS, "1rt7");
 
                     // Что дает диалект ??
-                    // settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
+                    settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
 
                     settings.put(Environment.SHOW_SQL, "true");
                     //settings.put(Environment.DEFAULT_SCHEMA, "my_schema");
@@ -139,12 +139,13 @@ public class Util {
                             .applySettings(configuration.getProperties())
                             .build();
 
-                    MetadataSources meta = new MetadataSources(serviceRegistry);
-                    Metadata data = meta.getMetadataBuilder().build();
-                    factory = data.getSessionFactoryBuilder().build();
+                    //1) через MetadataSources
+//                    MetadataSources meta = new MetadataSources(serviceRegistry);
+//                    Metadata data = meta.getMetadataBuilder().build();
+//                    factory = data.getSessionFactoryBuilder().build();
 
-
-                    //factory = configuration.buildSessionFactory(serviceRegistry);
+                    //2) через buildSessionFactory
+                    factory = configuration.buildSessionFactory(serviceRegistry);
 
                 } catch (Exception e) {
                     e.printStackTrace();
