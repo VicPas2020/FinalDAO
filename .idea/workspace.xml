@@ -43,8 +43,12 @@
     <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6f3da0d-99df-4662-aea2-ea83baaf8fd1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6f3da0d-99df-4662-aea2-ea83baaf8fd1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +110,7 @@
     <property name="project.structure.side.proportion" value="0.5011494" />
     <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="JUnit.UserServiceTest.saveUser">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="CoreTaskTemplate" />
@@ -150,16 +154,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoreTaskTemplate" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="getAllUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.removeUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoreTaskTemplate" />
       <option name="PACKAGE_NAME" value="" />
@@ -170,13 +164,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoreTaskTemplate" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <option name="METHOD_NAME" value="saveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.saveUser" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest.removeUserById" />
         <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
-        <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +214,11 @@
       <workItem from="1600155648632" duration="6315000" />
       <workItem from="1600163405221" duration="20610000" />
       <workItem from="1600234834218" duration="4320000" />
-      <workItem from="1600323147449" duration="1912000" />
+      <workItem from="1600323147449" duration="5149000" />
+      <workItem from="1600352196207" duration="1906000" />
+      <workItem from="1600410071793" duration="8154000" />
+      <workItem from="1600426467422" duration="2606000" />
+      <workItem from="1600502140631" duration="2189000" />
     </task>
     <task id="LOCAL-00001" summary="ini commit">
       <created>1599652733163</created>
@@ -296,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600246202159</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="save - saveOrUpdate - persist = the same result">
+      <created>1600344746060</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600344746061</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +342,8 @@
     <MESSAGE value="Generic SQL" />
     <MESSAGE value="SQL lite Dialect" />
     <MESSAGE value="DAO_MuSQL_DIALECT&#10;Util_General SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO_MuSQL_DIALECT&#10;Util_General SQL" />
+    <MESSAGE value="save - saveOrUpdate - persist = the same result" />
+    <option name="LAST_COMMIT_MESSAGE" value="save - saveOrUpdate - persist = the same result" />
   </component>
   <component name="WindowStateProjectService">
     <state x="846" y="411" key="#Assign_Data_Sources" timestamp="1600162145875">
@@ -348,40 +364,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="221" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600167644805" />
-    <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600246199737">
+    <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2" timestamp="1600344742613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600246199737" />
+    <state x="496" y="90" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600344742613" />
     <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600188139161" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600246122304">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600410420382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600246122304" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600410420382" />
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600187129895" />
     <state x="2713" y="418" key="Github.ShareDialog" timestamp="1600181358927">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="793" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599653559211" />
     <state x="2713" y="418" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600181358927" />
-    <state width="1879" height="319" key="GridCell.Tab.0.bottom" timestamp="1600343952278">
+    <state width="1879" height="319" key="GridCell.Tab.0.bottom" timestamp="1600418979684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600343952278" />
+    <state width="1879" height="319" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600418979684" />
     <state width="1879" height="334" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600192469509" />
-    <state width="1879" height="319" key="GridCell.Tab.0.center" timestamp="1600343952278">
+    <state width="1879" height="319" key="GridCell.Tab.0.center" timestamp="1600418979683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600343952278" />
+    <state width="1879" height="319" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600418979683" />
     <state width="1879" height="334" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600192469508" />
-    <state width="1879" height="319" key="GridCell.Tab.0.left" timestamp="1600343952277">
+    <state width="1879" height="319" key="GridCell.Tab.0.left" timestamp="1600418979683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600343952277" />
+    <state width="1879" height="319" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600418979683" />
     <state width="1879" height="334" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600192469508" />
-    <state width="1879" height="319" key="GridCell.Tab.0.right" timestamp="1600343952278">
+    <state width="1879" height="319" key="GridCell.Tab.0.right" timestamp="1600418979683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600343952278" />
+    <state width="1879" height="319" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600418979683" />
     <state width="1879" height="334" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600192469508" />
     <state width="1879" height="247" key="GridCell.Tab.1.bottom" timestamp="1600091352111">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -412,10 +428,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="281" height="441" key="SqlResolveConfigurable/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600186594777" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600246210530">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600344745918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600246210530" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600344745918" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600188148039" />
     <state x="2779" y="403" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1599545662244">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -439,11 +455,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="643" y="130" width="634" height="780" key="find.popup/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600103541976" />
+    <state width="916" height="500" key="javadoc.popup.new" timestamp="1600504378176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="500" key="javadoc.popup.new/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600504378176" />
     <state x="2262" y="140" key="new project wizard" timestamp="1600180742715">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="140" key="new project wizard/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1599231375139" />
     <state x="2262" y="140" key="new project wizard/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600180742715" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600418284351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600418284351" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1599652810513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
