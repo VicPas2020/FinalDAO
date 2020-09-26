@@ -8,10 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Properties;
 
 public class Util  {
@@ -26,8 +23,6 @@ public class Util  {
         final String password = "1rt7";
 
         try {
-            System.out.println("соединение.");
-
             connection = DriverManager.getConnection(url, user, password);
             // TODO: connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
             // TODO: connection.setAutoCommit(false);

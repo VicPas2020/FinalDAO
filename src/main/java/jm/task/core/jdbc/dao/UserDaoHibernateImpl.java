@@ -34,6 +34,7 @@ public class UserDaoHibernateImpl implements UserDao {
         session.beginTransaction();
         session.createNativeQuery(query).executeUpdate();
         session.getTransaction().commit();
+
      }
 
     @Override
@@ -47,9 +48,8 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-
-        session.beginTransaction();
         User user = new User(name, lastName ,age);
+        session.beginTransaction();
         session.save(user);
         session.getTransaction().commit();
     }

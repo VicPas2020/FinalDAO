@@ -62,18 +62,33 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
 
+        } finally {
+            try {
+                pstatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     public void removeUserById(long id) {
-        String query =  "DELETE FROM " + tableName + " WHERE id=" + id;
-
+//        String query =  "DELETE FROM " + tableName + " WHERE id=" + id;
+        String query =  "DELETE FROM " + tableName + " WHERE id = ?";
         try {
-            if (statement.executeUpdate(query) == 0) {
+            pstatement = connection.prepareStatement(query);
+            pstatement.setLong(1, id);
+
+            if (pstatement.executeUpdate() == 0) {
                 System.out.println("Индекс " + id + " не существует");
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                pstatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
