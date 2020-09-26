@@ -3,9 +3,7 @@ package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,9 +12,17 @@ public class UserDaoJDBCImpl implements UserDao {
     private final String tableName;
 
     static Statement statement;
+    static PreparedStatement pstatement;
+    static Connection connection;
 
     {
-        statement = Util.createStatementJDBC();
+       connection = Util.createconnectionJDBC();
+        try {
+            statement = connection.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public UserDaoJDBCImpl(String tableName) {
@@ -44,13 +50,18 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void saveUser(String name, String lastName, byte age) {
 
-        String query =  "INSERT INTO " + tableName +" (name, lastName, age) VALUES ( '"
-                + name + "', '" + lastName   + "', " + age + ")";
+        String query = "INSERT INTO " + tableName + " (name, lastName, age) VALUES (?,?,?)";
         try {
-            statement.executeUpdate(query);
+            pstatement = connection.prepareStatement(query);
+            pstatement.setString(1, name);
+            pstatement.setString(2, lastName);
+            pstatement.setByte  (3, age);
+            pstatement.executeUpdate();
             System.out.println("User с именем – " + name + " добавлен в базу данных");
+
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
     }
 
@@ -107,8 +118,8 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     @Override
-    public Statement openConnection() {
-       return Util.createStatementJDBC();
+    public Connection openConnection() {
+       return Util.createconnectionJDBC();
     }
 
     @Override

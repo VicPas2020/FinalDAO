@@ -7,9 +7,10 @@ import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 public class Main {
     public static void main(String[] args) {
 
-        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.JDBC);
+        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.TABLE_4);
 
         connection.createUsersTable();
+
         connection.saveUser("sss","AAA",(byte) 23);
         connection.saveUser("fff","AAA",(byte) 23);
         connection.saveUser("www","AAA",(byte) 23);

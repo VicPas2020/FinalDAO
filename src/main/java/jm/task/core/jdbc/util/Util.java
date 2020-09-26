@@ -19,20 +19,23 @@ public class Util  {
     static Connection connection;
     static Statement statement;
 
-    public static Statement createStatementJDBC()   {
+    public static Connection createconnectionJDBC()   {
 
         final String url = "jdbc:mysql://localhost:3306/my_schema?useSSL=false";
         final String user = "root";
         final String password = "1rt7";
 
         try {
+            System.out.println("соединение.");
+
             connection = DriverManager.getConnection(url, user, password);
-            statement = connection.createStatement();
+            // TODO: connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            // TODO: connection.setAutoCommit(false);
         } catch (SQLException e){
             e.printStackTrace();
             System.out.println("Не удалось установить соединение.");
         }
-        return statement;
+        return connection;
     }
 
     public static void closeJDBC(){
