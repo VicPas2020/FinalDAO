@@ -11,13 +11,16 @@ public class Main {
 
         connection.createUsersTable();
 
-        connection.saveUser("sss","AAA",(byte) 23);
-        connection.saveUser("fff","AAA",(byte) 23);
-        connection.saveUser("www","AAA",(byte) 23);
+        connection.saveUser("aaa","AAA",(byte) 23);
+        connection.saveUser("bbb","BBB",(byte) 23);
+        connection.saveUser("ccc","CCC",(byte) 23);
+
         connection.removeUserById(1);
-        connection.saveUser("www","AAA",(byte) 23);
-        connection.saveUser("www","AAA",(byte) 23);
-        connection.saveUser("www","AAA",(byte) 23);
+
+        connection.saveUser("ddd","DDD",(byte) 23);
+        connection.saveUser("eee","EEE",(byte) 23);
+        connection.saveUser("fff","FFF",(byte) 23);
+
         connection.getAllUsers();
         connection.removeUserById(5);
         //connection.cleanUsersTable();

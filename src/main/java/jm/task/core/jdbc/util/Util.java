@@ -72,7 +72,6 @@ public class Util  {
 
         factory = configuration.buildSessionFactory(serviceRegistry);
         return factory.openSession();
-
     }
 
     public static void closeHIBER(){
