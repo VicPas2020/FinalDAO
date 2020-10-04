@@ -1,5 +1,6 @@
 package jm.task.core.jdbc.dao;
 
+import jm.task.core.jdbc.model.Passport;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
@@ -68,6 +69,11 @@ public class UserDaoJDBCImpl implements UserDao {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public void savePerson(String name, String lastName, byte age, Passport pass) {
+
     }
 
     public void removeUserById(long id) {

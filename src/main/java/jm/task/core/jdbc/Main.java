@@ -7,9 +7,27 @@ import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 public class Main {
     public static void main(String[] args) {
 
-        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.ONE_to_one);
+//        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.ONE_to_one);
+        UserDao connection =  connectMeTo(ConnectorName.HIBERNATE);
 
-        connection.createUsersTable();
+
+
+
+
+
+        connection.saveUser("aaa","AAA",(byte) 23);
+
+
+
+
+
+
+
+
+
+
+
+        /*connection.createUsersTable();
 
         connection.saveUser("aaa","AAA",(byte) 23);
         connection.saveUser("bbb","BBB",(byte) 23);
@@ -24,7 +42,7 @@ public class Main {
         connection.getAllUsers();
         connection.removeUserById(5);
         //connection.cleanUsersTable();
-//        connection.dropUsersTable();
+//        connection.dropUsersTable();*/
         connection.closeConnection();
     }
 

@@ -1,15 +1,14 @@
 package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.Passport;
+import jm.task.core.jdbc.model.Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class UserDaoHibernateImpl implements UserDao {
+public class PersonDaoHibernateImpl implements UserDao {
 
     private final String tableName;
 
@@ -19,7 +18,7 @@ public class UserDaoHibernateImpl implements UserDao {
         session = Util.createSessionHIBER();
     }
 
-    public UserDaoHibernateImpl(String tableName) {
+    public PersonDaoHibernateImpl(String tableName) {
         this.tableName = tableName;
     }
 
@@ -47,15 +46,17 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        User user = new User(name, lastName ,age);
-        session.beginTransaction();
-        session.save(user);
-        session.getTransaction().commit();
+
     }
+
+
 
     @Override
     public void savePerson(String name, String lastName, byte age, Passport pass) {
-
+        Person person = new Person(name, lastName ,age, pass);
+        session.beginTransaction();
+        session.save(person);
+        session.getTransaction().commit();
     }
 
     @Override
