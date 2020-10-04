@@ -26,9 +26,7 @@ public class Person {
     private Passport passport;
 
 
-    public Person() {
-
-    }
+    public Person() {}
 
     public Person(String name, String lastName, Byte age, Passport passport) {
         this.name = name;

@@ -27,4 +27,6 @@ public class Passport {
         this.number = number;
         this.person = person;
     }
+
+    public Passport() {}
 }
