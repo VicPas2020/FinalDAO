@@ -7,7 +7,7 @@ import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 public class Main {
     public static void main(String[] args) {
 
-        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.TABLE_4);
+        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.ONE_to_one);
 
         connection.createUsersTable();
 
