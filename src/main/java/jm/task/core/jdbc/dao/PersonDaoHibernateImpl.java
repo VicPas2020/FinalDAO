@@ -99,7 +99,7 @@ public class PersonDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void savePassport(String seria, int number, Person person) {
+    public void savePassport(String seria, int number/*, Person person*/) {
 
     }
     @Override

@@ -15,7 +15,7 @@ public interface UserDao {
 
     void savePerson(String name, String lastName, byte age, Passport pass);
 
-    void savePassport(String seria, int number, Person person);
+    void savePassport(String seria, int number/*, Person person*/);
 
     void removeUserById(long id);
 

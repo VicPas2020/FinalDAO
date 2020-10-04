@@ -21,8 +21,16 @@ public class Person {
     @Column
     private Byte age;
 
-    @OneToOne (optional=false, cascade=CascadeType.ALL)
-    @JoinColumn (name="passport_id")
+    @OneToOne (optional=true, cascade=CascadeType.ALL)
+    // эта строка опциональная - может быть , а может не быть - в колонку passport_id пишется автоматом, если она есть
+    //@JoinColumn(name="passport_id"/*, referencedColumnName="id"*/) // name - имя колонки в ЭТОМ классе для пасспорта и она ДОЛЖНА УЖЕ БЫТЬ!
+//  это для отдельной таблицы - персона - паспорт.(person_passport)
+//    @JoinTable(name = "person_passport",
+//            joinColumns = @JoinColumn(name="person_id"),
+//            inverseJoinColumns = @JoinColumn(name="passport_id")
+//
+//    )
+
     private Passport passport;
 
 

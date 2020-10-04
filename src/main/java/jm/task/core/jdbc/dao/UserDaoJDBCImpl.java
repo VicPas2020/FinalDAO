@@ -71,10 +71,8 @@ public class UserDaoJDBCImpl implements UserDao {
         }
     }
 
-    @Override
-    public void savePerson(String name, String lastName, byte age, Passport pass) {
 
-    }
+
 
     public void removeUserById(long id) {
 //        String query =  "DELETE FROM " + tableName + " WHERE id=" + id;
@@ -146,4 +144,14 @@ public class UserDaoJDBCImpl implements UserDao {
     public void closeConnection() {
        Util.closeJDBC();
     }
+
+    @Override
+    public void savePassport(String seria, int number) {
+
+    }
+    @Override
+    public void savePerson(String name, String lastName, byte age, Passport pass) {
+
+    }
+
 }

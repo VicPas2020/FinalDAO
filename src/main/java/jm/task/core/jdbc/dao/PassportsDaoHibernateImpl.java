@@ -47,8 +47,8 @@ public class PassportsDaoHibernateImpl implements UserDao {
 
 
     @Override
-    public void savePassport(String seria, int number, Person person) {
-        Passport pass = new Passport(seria, number, person);
+    public void savePassport(String seria, int number/*, Person person*/) {
+        Passport pass = new Passport(seria, number);
         session.beginTransaction();
         session.save(pass);
         session.getTransaction().commit();

@@ -58,6 +58,8 @@ public class UserDaoHibernateImpl implements UserDao {
 
     }
 
+
+
     @Override
     public void removeUserById(long id) {
 
@@ -98,5 +100,11 @@ public class UserDaoHibernateImpl implements UserDao {
     @Override
     public void closeConnection() {
         Util.closeHIBER();
+    }
+
+
+    @Override
+    public void savePassport(String seria, int number) {
+
     }
 }

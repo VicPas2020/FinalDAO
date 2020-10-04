@@ -1,8 +1,11 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.dao.PersonDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
+import jm.task.core.jdbc.model.Passport;
+import jm.task.core.jdbc.model.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,11 +14,15 @@ public class Main {
         UserDao connection =  connectMeTo(ConnectorName.HIBERNATE);
 
 
+        Passport pass1 = null;
+        pass1 = new Passport("AA", 1);
+
+        Person pers1 = new Person("a", "A", (byte)1, pass1);
 
 
 
 
-        connection.saveUser("aaa","AAA",(byte) 23);
+        connection.savePerson("a", "A", (byte)1, pass1);
 
 
 
@@ -58,7 +65,7 @@ public class Main {
         if(connectorName.equals(ConnectorName.JDBC)) {
             throw new RuntimeException("Не указана таблица для JDBC");
         } else if (connectorName.equals(ConnectorName.HIBERNATE)) {
-            return new UserDaoHibernateImpl(TableName.HIBERNATE);
+            return new PersonDaoHibernateImpl(TableName.HIBERNATE);
         } else {throw new RuntimeException();}
     }
 }

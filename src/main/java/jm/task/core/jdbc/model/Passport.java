@@ -18,14 +18,16 @@ public class Passport {
     @Column
     private int number;
 
-    @OneToOne (optional=false, mappedBy="passport")
+    @OneToOne (optional=true /*cascade=CascadeType.ALL*/ /* mappedBy="passport"*/)
+    //@JoinColumn(name="person", referencedColumnName="id")
+    @PrimaryKeyJoinColumn
     private Person person;
 
 
-    public Passport(String seria, int number, Person person) {
+    public Passport(String seria, int number/*, Person person*/) {
         this.seria = seria;
         this.number = number;
-        this.person = person;
+        //this.person = person;
     }
 
     public Passport() {}

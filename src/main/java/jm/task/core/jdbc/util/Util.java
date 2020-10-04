@@ -1,5 +1,7 @@
 package jm.task.core.jdbc.util;
 
+import jm.task.core.jdbc.model.Passport;
+import jm.task.core.jdbc.model.Person;
 import jm.task.core.jdbc.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -53,6 +55,8 @@ public class Util  {
 
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(Person.class);
+        configuration.addAnnotatedClass(Passport.class);
 
         Properties settings = new Properties();
         //settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver"); //AvailableSettings
@@ -77,12 +81,10 @@ public class Util  {
     public static void closeHIBER(){
         if (factory != null) {
             factory.close();
-            System.out.println("factory closed");
         }
 
         if (serviceRegistry != null) {
             serviceRegistry.close();
-            System.out.println("registry closed");
         }
     }
 }
