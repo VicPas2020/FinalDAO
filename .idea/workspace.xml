@@ -41,15 +41,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3035811e-262d-4af6-a38f-bdba30863353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/PersonDaoHibernateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/Passport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/TableName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/TableName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/PassportsDaoHibernateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/PersonDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/PersonDaoHibernateImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/Passport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +255,7 @@
       <workItem from="1601058461829" duration="99000" />
       <workItem from="1601099112926" duration="9814000" />
       <workItem from="1601126565565" duration="3821000" />
-      <workItem from="1601803882233" duration="2247000" />
+      <workItem from="1601803882233" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="ini commit">
       <created>1599652733163</created>
@@ -395,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601803963779</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="создал классы сущностей">
+      <created>1601806178525</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601806178525</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +437,8 @@
     <MESSAGE value="добавил prepared Statement" />
     <MESSAGE value="добавил ЕЩЕ ОДИН prepared Statement" />
     <MESSAGE value="ONE_to_one - many_to_MANY... tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="ONE_to_one - many_to_MANY... tests" />
+    <MESSAGE value="создал классы сущностей" />
+    <option name="LAST_COMMIT_MESSAGE" value="создал классы сущностей" />
   </component>
   <component name="WindowStateProjectService">
     <state x="846" y="411" width="404" height="217" key="#Assign_Data_Sources" timestamp="1601804738313">
@@ -452,10 +455,10 @@
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600508432848" />
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1599546132707" />
-    <state x="1344" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1601806085245">
+    <state x="1344" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1601809014378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1344" y="208" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1601806085245" />
+    <state x="1344" y="208" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1601809014378" />
     <state x="637" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601057601166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -464,10 +467,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1600944070282" />
-    <state x="493" y="51" width="992" height="915" key="CommitChangelistDialog2" timestamp="1601803961760">
+    <state x="493" y="51" width="992" height="915" key="CommitChangelistDialog2" timestamp="1601806176885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="493" y="51" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1601803961760" />
+    <state x="493" y="51" width="992" height="915" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1601806176885" />
     <state x="2416" y="90" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1080@1920.0.1920.1040" timestamp="1600188139161" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1601127521813">
       <screen x="0" y="0" width="1920" height="1040" />

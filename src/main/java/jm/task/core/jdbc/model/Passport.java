@@ -20,4 +20,11 @@ public class Passport {
 
     @OneToOne (optional=false, mappedBy="passport")
     private Person person;
+
+
+    public Passport(String seria, int number, Person person) {
+        this.seria = seria;
+        this.number = number;
+        this.person = person;
+    }
 }

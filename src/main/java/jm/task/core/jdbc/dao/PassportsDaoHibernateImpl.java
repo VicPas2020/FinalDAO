@@ -8,7 +8,7 @@ import org.hibernate.Session;
 
 import java.util.List;
 
-public class PersonDaoHibernateImpl implements UserDao {
+public class PassportsDaoHibernateImpl implements UserDao {
 
     private final String tableName;
 
@@ -18,7 +18,7 @@ public class PersonDaoHibernateImpl implements UserDao {
         session = Util.createSessionHIBER();
     }
 
-    public PersonDaoHibernateImpl(String tableName) {
+    public PassportsDaoHibernateImpl(String tableName) {
         this.tableName = tableName;
     }
 
@@ -47,12 +47,13 @@ public class PersonDaoHibernateImpl implements UserDao {
 
 
     @Override
-    public void savePerson(String name, String lastName, byte age, Passport pass) {
-        Person person = new Person(name, lastName ,age, pass);
+    public void savePassport(String seria, int number, Person person) {
+        Passport pass = new Passport(seria, number, person);
         session.beginTransaction();
-        session.save(person);
+        session.save(pass);
         session.getTransaction().commit();
     }
+
 
 
 
@@ -98,13 +99,10 @@ public class PersonDaoHibernateImpl implements UserDao {
         Util.closeHIBER();
     }
 
-    @Override
-    public void savePassport(String seria, int number, Person person) {
 
-    }
     @Override
-    public void saveUser(String name, String lastName, byte age) {
-
-    }
+    public void saveUser(String name, String lastName, byte age) {}
+    @Override
+    public void savePerson(String name, String lastName, byte age, Passport pass) {}
 
 }
