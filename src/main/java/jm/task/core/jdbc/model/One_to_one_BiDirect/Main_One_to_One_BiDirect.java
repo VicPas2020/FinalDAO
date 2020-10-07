@@ -2,17 +2,18 @@ package jm.task.core.jdbc.model.One_to_one_BiDirect;
 
 import jm.task.core.jdbc.ConnectorName;
 import jm.task.core.jdbc.TableName;
-import jm.task.core.jdbc.dao.PassportsDaoHibernateImpl;
-import jm.task.core.jdbc.dao.PersonDaoHibernateImpl;
-import jm.task.core.jdbc.dao.UserDao;
-import jm.task.core.jdbc.model.User;
+//import jm.task.core.jdbc.dao.PassportsDaoHibernateImpl;
+//import jm.task.core.jdbc.dao.PersonDaoHibernateImpl;
+//import jm.task.core.jdbc.dao.UserDao;
+//import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
 
 import java.util.List;
 
 public class Main_One_to_One_BiDirect {
-   public static Session session = Util.createSessionHIBER();
+
+   public static Session session = Util.createSessionHIBER(to_Person.class, to_Passport.class);
 
     public static void main(String[] args) {
 
@@ -95,12 +96,12 @@ public class Main_One_to_One_BiDirect {
 
 
 
-    public static  List<User> getAllUsers(Object o) {
+    public static <T> List<T> getAllUsers(T o) {
 
         String query = "FROM "+ o.getClass().getSimpleName();
 
         session.beginTransaction();
-        List<User> list = session.createQuery(query).getResultList();
+        List<T> list = session.createQuery(query).getResultList();
         session.getTransaction().commit();
         return list;
     }
@@ -119,10 +120,10 @@ public class Main_One_to_One_BiDirect {
     }
 
 
-    static UserDao connectMeTo(ConnectorName connectorName) {
-
-            return new PersonDaoHibernateImpl(TableName.HIBERNATE);
-//            return new PassportsDaoHibernateImpl(TableName.HIBERNATE);
-
-    }
+//    static UserDao connectMeTo(ConnectorName connectorName) {
+//
+//            return new PersonDaoHibernateImpl(TableName.HIBERNATE);
+////            return new PassportsDaoHibernateImpl(TableName.HIBERNATE);
+//
+//    }
 }

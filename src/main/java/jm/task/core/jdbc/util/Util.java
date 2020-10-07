@@ -2,7 +2,6 @@ package jm.task.core.jdbc.util;
 
 import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
 import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
-import jm.task.core.jdbc.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -55,12 +54,15 @@ public class Util  {
     private static SessionFactory factory;
     private static ServiceRegistry serviceRegistry;
 
-    public static Session createSessionHIBER()   {
+    public static Session createSessionHIBER(Class...o)   {
 
         Configuration configuration = new Configuration();
-        configuration.addAnnotatedClass(User.class);
-        configuration.addAnnotatedClass(to_Person.class);
-        configuration.addAnnotatedClass(to_Passport.class);
+        //configuration.addAnnotatedClass(User.class);
+//        System.out.println(o[0].getSimpleName());
+//        System.out.println(o[1].getSimpleName());
+
+        configuration.addAnnotatedClass(o[0]);
+        configuration.addAnnotatedClass(o[1]);
 
         Properties settings = new Properties();
         //settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver"); //AvailableSettings
