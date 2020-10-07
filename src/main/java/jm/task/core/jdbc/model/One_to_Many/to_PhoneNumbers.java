@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name= TableName.MANY_to_ONE_1)
-public class to_PhoneNumber {
+public class to_PhoneNumbers {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,13 +25,13 @@ public class to_PhoneNumber {
     private to_Person person;
 
 
-    public to_PhoneNumber(String seria, int number, to_Person person) {
+    public to_PhoneNumbers(String seria, int number, to_Person person) {
         this.seria = seria;
         this.number = number;
         this.person = person;
     }
 
-    public to_PhoneNumber() {}
+    public to_PhoneNumbers() {}
 
     public to_Person getPerson() {
         return person;

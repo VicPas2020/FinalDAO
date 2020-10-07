@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name= TableName.one_to_ONE_Uni_Dir)
-public class Passport {
+public class to_Passport {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,13 +24,13 @@ public class Passport {
     private Person person;
 
 
-    public Passport(String seria, int number, Person person) {
+    public to_Passport(String seria, int number, Person person) {
         this.seria = seria;
         this.number = number;
         this.person = person;
     }
 
-    public Passport() {}
+    public to_Passport() {}
 
     public Person getPerson() {
         return person;
