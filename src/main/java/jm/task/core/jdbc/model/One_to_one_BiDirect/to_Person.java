@@ -5,7 +5,7 @@ import jm.task.core.jdbc.TableName;
 import javax.persistence.*;
 
 @Entity
-@Table (name= TableName.ONE_to_one_BiDir)
+//@Table (name= TableName.ONE_to_one_BiDir)
 public class to_Person {
 
     @Id
@@ -89,7 +89,7 @@ public class to_Person {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "\nUser{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +

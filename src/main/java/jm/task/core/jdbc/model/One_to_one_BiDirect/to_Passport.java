@@ -5,7 +5,7 @@ import jm.task.core.jdbc.TableName;
 import javax.persistence.*;
 
 @Entity
-@Table(name= TableName.one_to_ONE_BiDir)
+//@Table(name= TableName.one_to_ONE_BiDir)
 public class to_Passport {
 
     @Id
@@ -66,5 +66,15 @@ public class to_Passport {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "\nto_Passport{" +
+                "id=" + id +
+                ", seria='" + seria + '\'' +
+                ", number=" + number +
+                ", person=" + person +
+                '}';
     }
 }
