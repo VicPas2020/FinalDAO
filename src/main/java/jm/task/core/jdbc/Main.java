@@ -14,15 +14,22 @@ public class Main {
         UserDao connection =  connectMeTo(ConnectorName.HIBERNATE);
 
 
-        Passport pass1 = null;
-        pass1 = new Passport("AA", 1);
-
-        Person pers1 = new Person("a", "A", (byte)1, pass1);
-
+        Passport pass1 = new Passport();
+        pass1.setSeria("ABC");
+        pass1.setNumber(123);
 
 
+
+//        Person pers1 = new Person();
+//        pers1.setName("BBB");
+//        pers1.setLastName("JJJ");
+//        pers1.setAge((byte)8);
+//        pers1.setPassport(pass1);
 
         connection.savePerson("a", "A", (byte)1, pass1);
+
+        //connection.removeUserById(31);
+
 
 
 

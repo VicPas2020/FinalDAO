@@ -55,18 +55,42 @@ public class PersonDaoHibernateImpl implements UserDao {
     }
 
 
-
     @Override
     public void removeUserById(long id) {
 
-        if (session.find(User.class, id) != null) {
+        if (session.find(Person.class, id) != null) {
             session.beginTransaction();
-            session.delete(session.find(User.class, id));
+            session.delete(session.find(Person.class, id));
             session.getTransaction().commit();
         } else {
             System.out.println("Индекс " + id + " не существует");
         }
     }
+
+
+//    @Override
+//    public void removeUserById(long id) {
+//
+//        if (session.find(User.class, id) != null) {
+//            session.beginTransaction();
+//            session.delete(session.find(User.class, id));
+//            session.getTransaction().commit();
+//        } else {
+//            System.out.println("Индекс " + id + " не существует");
+//        }
+//    }
+
+//    @Override
+//    public void removeUserById(long id) {
+//
+//        if (session.find(User.class, id) != null) {
+//            session.beginTransaction();
+//            session.delete(session.find(User.class, id));
+//            session.getTransaction().commit();
+//        } else {
+//            System.out.println("Индекс " + id + " не существует");
+//        }
+//    }
 
     @Override
     public List<User> getAllUsers() {
@@ -99,12 +123,12 @@ public class PersonDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void savePassport(String seria, int number/*, Person person*/) {
-
+    public void savePassport(String seria, int number, Person person) {
+        throw new RuntimeException("пустой метод");
     }
     @Override
     public void saveUser(String name, String lastName, byte age) {
-
+        throw new RuntimeException("пустой метод");
     }
 
 }

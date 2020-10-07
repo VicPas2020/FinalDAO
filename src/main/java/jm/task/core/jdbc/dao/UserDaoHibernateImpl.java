@@ -1,6 +1,7 @@
 package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.Passport;
+import jm.task.core.jdbc.model.Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
@@ -104,7 +105,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
 
     @Override
-    public void savePassport(String seria, int number) {
+    public void savePassport(String seria, int number, Person person) {
 
     }
 }
