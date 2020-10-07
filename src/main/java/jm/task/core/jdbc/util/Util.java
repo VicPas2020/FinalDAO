@@ -1,7 +1,7 @@
 package jm.task.core.jdbc.util;
 
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 import jm.task.core.jdbc.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -58,8 +58,8 @@ public class Util  {
 
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(User.class);
-        configuration.addAnnotatedClass(Person.class);
-        configuration.addAnnotatedClass(Passport.class);
+        configuration.addAnnotatedClass(to_Person.class);
+        configuration.addAnnotatedClass(to_Passport.class);
 
         Properties settings = new Properties();
         //settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver"); //AvailableSettings

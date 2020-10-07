@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name= TableName.one_to_ONE_BiDir)
-public class Passport {
+public class to_Passport {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,22 +25,22 @@ public class Passport {
     // эта аннотация на случай создания отдельной таблицы со связями(во втором объекте - не здесь). В исходных таблицах не будет связей.
     //@PrimaryKeyJoinColumn  // удалить элементы с таблиц будет нельзя, пока они не удалены из таблицы связей
 
-    private Person person;
+    private to_Person person;
 
 
-    public Passport(String seria, int number, Person person) {
+    public to_Passport(String seria, int number, to_Person person) {
         this.seria = seria;
         this.number = number;
         this.person = person;
     }
 
-    public Passport() {}
+    public to_Passport() {}
 
-    public Person getPerson() {
+    public to_Person getPerson() {
         return person;
     }
 
-    public void setPerson(Person person) {
+    public void setPerson(to_Person person) {
         this.person = person;
     }
 

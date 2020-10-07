@@ -1,7 +1,7 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
@@ -47,7 +47,7 @@ public class PassportsDaoHibernateImpl implements UserDao {
 
 
     @Override
-    public void savePassport(Passport passport) {
+    public void savePassport(to_Passport passport) {
         //Passport pass = new Passport(seria, number, person);
         session.beginTransaction();
         session.save(passport);
@@ -57,9 +57,9 @@ public class PassportsDaoHibernateImpl implements UserDao {
     @Override
     public void removeUserById(long id) {
 
-        if (session.find(Passport.class, id) != null) {
+        if (session.find(to_Passport.class, id) != null) {
             session.beginTransaction();
-            session.delete(session.find(Passport.class, id));
+            session.delete(session.find(to_Passport.class, id));
             session.getTransaction().commit();
         } else {
             System.out.println("Индекс " + id + " не существует");
@@ -116,7 +116,7 @@ public class PassportsDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void savePerson(Person person) {
+    public void savePerson(to_Person person) {
         throw new RuntimeException("пустой метод 1");
     }
 

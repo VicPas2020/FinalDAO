@@ -1,13 +1,12 @@
-package jm.task.core.jdbc.model.Many_to_One;
+package jm.task.core.jdbc.model.One_to_one_BiDirect;
 
 import jm.task.core.jdbc.TableName;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
 
 import javax.persistence.*;
 
 @Entity
-@Table (name= TableName.MANY_to_ONE_2)
-public class Person {
+@Table (name= TableName.ONE_to_one_BiDir)
+public class to_Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,24 +21,24 @@ public class Person {
     @Column
     private Byte age;
 
-    @OneToOne (optional=true, cascade=CascadeType.ALL/*, mappedBy="passport"*/)
+    @OneToOne (optional=true, cascade=CascadeType.ALL )
 
+    // эта аннотация для двунаправленной связи в исходных таблицах
     // эта строка опциональная - может быть , а может не быть - в колонку passport_id пишется автоматом, если она есть в таблице
-    //@JoinColumn(name="passport_id"/*, referencedColumnName="id"*/) // name - имя колонки в ЭТОМ классе для пасспорта и она ДОЛЖНА УЖЕ БЫТЬ!
+    @JoinColumn(name="passport_id"/*, referencedColumnName="id"*/) // passport_id - имя колонки в ЭТОМ классе для пасспорта и она ДОЛЖНА УЖЕ БЫТЬ!
 
-//  а это для связи через отдельную таблицу - "персона-паспорт".(person_passport)
+  //а это для связи через отдельную таблицу - "персона-паспорт".(person_passport)
 //    @JoinTable(name = "person_passport",
 //            joinColumns = @JoinColumn(name="person_id"),
 //            inverseJoinColumns = @JoinColumn(name="passport_id")
 //
 //    )
-    @JoinColumn(name="passport_id", referencedColumnName="id")
-    private Passport passport;
+    private to_Passport passport;
 
 
-    public Person() {}
+    public to_Person() {}
 
-    public Person(String name, String lastName, Byte age, Passport passport) {
+    public to_Person(String name, String lastName, Byte age, to_Passport passport) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
@@ -48,11 +47,11 @@ public class Person {
     }
 
 
-    public Passport getPassport() {
+    public to_Passport getPassport() {
         return passport;
     }
 
-    public void setPassport(Passport passport) {
+    public void setPassport(to_Passport passport) {
         this.passport = passport;
     }
 

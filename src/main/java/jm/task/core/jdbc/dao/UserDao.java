@@ -1,7 +1,7 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 import jm.task.core.jdbc.model.User;
 
 import java.util.List;
@@ -13,9 +13,9 @@ public interface UserDao {
 
     void saveUser(String name, String lastName, byte age);
 
-    void savePerson(Person person);
+    void savePerson(to_Person person);
 
-    void savePassport(Passport passport);
+    void savePassport(to_Passport passport);
 
     void removeUserById(long id);
 

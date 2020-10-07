@@ -1,9 +1,7 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.model.*;
-import jm.task.core.jdbc.model.*;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
@@ -101,11 +99,11 @@ public class UserDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void savePerson(Person person) {
+    public void savePerson(to_Person person) {
         throw new RuntimeException("пустой метод 3");
     }
     @Override
-    public void savePassport(Passport passport) {
+    public void savePassport(to_Passport passport) {
         throw new RuntimeException("пустой метод 4");
     }
 }

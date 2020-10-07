@@ -4,8 +4,6 @@ import jm.task.core.jdbc.ConnectorName;
 import jm.task.core.jdbc.TableName;
 import jm.task.core.jdbc.dao.PersonDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDao;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 
 public class Main_One_to_One_BiDirect {
     public static void main(String[] args) {
@@ -14,13 +12,13 @@ public class Main_One_to_One_BiDirect {
         UserDao connection =  connectMeTo(ConnectorName.HIBERNATE);
 
 
-        Passport pass1 = new Passport();
+        to_Passport pass1 = new to_Passport();
         pass1.setSeria("ABC");
         pass1.setNumber(123);
 
 
 
-        Person person = new Person();
+        to_Person person = new to_Person();
         person.setName("BBB");
         person.setLastName("JJJ");
         person.setAge((byte)8);

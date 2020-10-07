@@ -1,13 +1,13 @@
 package jm.task.core.jdbc.model.Many_to_Many;
 
 import jm.task.core.jdbc.TableName;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
 
 import javax.persistence.*;
 
 @Entity
 @Table (name= TableName.MANY_to_many)
-public class Person {
+public class Customers {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,12 +34,12 @@ public class Person {
 //
 //    )
     @JoinColumn(name="passport_id", referencedColumnName="id")
-    private Passport passport;
+    private to_Passport passport;
 
 
-    public Person() {}
+    public Customers() {}
 
-    public Person(String name, String lastName, Byte age, Passport passport) {
+    public Customers(String name, String lastName, Byte age, to_Passport passport) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
@@ -48,11 +48,11 @@ public class Person {
     }
 
 
-    public Passport getPassport() {
+    public to_Passport getPassport() {
         return passport;
     }
 
-    public void setPassport(Passport passport) {
+    public void setPassport(to_Passport passport) {
         this.passport = passport;
     }
 

@@ -1,13 +1,13 @@
-package jm.task.core.jdbc.model.Many_to_Many;
+package jm.task.core.jdbc.model.Many_to_One;
 
 import jm.task.core.jdbc.TableName;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name= TableName.many_to_MANY)
-public class Passport {
+@Table(name= TableName.ONE_to_MANY_2)
+public class to_Citizenship {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,22 +22,22 @@ public class Passport {
     @OneToOne (optional=true /*cascade=CascadeType.ALL*//*,  mappedBy="passport"*/)
     @JoinColumn(name="person", referencedColumnName="id") //- можно заменить на нижеследующую PrimaryKeyJoinColumn
     //@PrimaryKeyJoinColumn
-    private Person person;
+    private to_Person person;
 
 
-    public Passport(String seria, int number, Person person) {
+    public to_Citizenship(String seria, int number, to_Person person) {
         this.seria = seria;
         this.number = number;
         this.person = person;
     }
 
-    public Passport() {}
+    public to_Citizenship() {}
 
-    public Person getPerson() {
+    public to_Person getPerson() {
         return person;
     }
 
-    public void setPerson(Person person) {
+    public void setPerson(to_Person person) {
         this.person = person;
     }
 
