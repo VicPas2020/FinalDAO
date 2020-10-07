@@ -1,54 +1,73 @@
-package jm.task.core.jdbc.model.One_to_One_UniDirect;
+package jm.task.core.jdbc.model.One_to_Many_Uni;
 
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
 
 import java.util.List;
 
-public class Main_One_to_One_UniDirect {
+public class Main_One_to_Many_Uni {
 
-   public static Session session = Util.createSessionHIBER(Person.class, to_Passport.class);
+   public static Session session = Util.createSessionHIBER(PersonUni.class, to_PhoneNumbersUni.class);
 
     public static void main(String[] args) {
 
 
-        to_Passport pass1 = new to_Passport();
-        pass1.setSeria("DEF");
-        pass1.setNumber(456);
+        to_PhoneNumbersUni number1 = new to_PhoneNumbersUni();
+        number1.setNumber(8800201);
+
+        to_PhoneNumbersUni number2 = new to_PhoneNumbersUni();
+        number2.setNumber(8800202);
+
+        to_PhoneNumbersUni number3 = new to_PhoneNumbersUni();
+        number3.setNumber(8800203);
+
+        PersonUni person1 = new PersonUni();
+        person1.setName("FIRST");
+        person1.setLastName("MAN");
+        person1.setAge((byte)28);
+        person1.getPhoneNumbers().add(number1);
+        person1.getPhoneNumbers().add(number2);
+        person1.getPhoneNumbers().add(number3);
 
 
+        to_PhoneNumbersUni number11 = new to_PhoneNumbersUni();
+        number11.setNumber(8800501);
 
-        Person person = new Person();
-        person.setName("OOO");
-        person.setLastName("KKK");
-        person.setAge((byte)18);
-        person.setPassport(pass1);
-        //pass1.setPerson(person);
+        to_PhoneNumbersUni number22 = new to_PhoneNumbersUni();
+        number22.setNumber(8800502);
+
+        to_PhoneNumbersUni number33 = new to_PhoneNumbersUni();
+        number33.setNumber(8800503);
+
+        PersonUni person2 = new PersonUni();
+        person2.setName("SECOND");
+        person2.setLastName("FAM");
+        person2.setAge((byte)28);
+        person2.getPhoneNumbers().add(number11);
+        person2.getPhoneNumbers().add(number22);
+        person2.getPhoneNumbers().add(number33);
+
 
 
 
          // 1
-        // СОХРАНЕНИЕ ЛЮБОГО из объектов = НО ТОЛЬКО ОДНОГО -
-
-         saveMe(person);
-
-
-        //TODO: почему не пишет несколько подряд saveMe(person);
-        // saveMe(person); saveMe(person); saveMe(person);
+        // СОХРАНЕНИЕ ЛЮБОГО из объектов
+         saveMe(person1);
+         saveMe(person2);
 
 
         // 2
         // УДАЛЕНИЕ ПО ID
-        //removeObjectById(pass1, 2);
+        //removeObjectById(person1, 2);
 
 
         // 3
         // получание всех данны таблиц по объекту
-        //getAllUsers(person);
+//        getAllUsers(pass1);
 
 
         // 4 очистка таблиц - не связаны - удаляются по одной
-        //cleanTable(person);
+        //cleanTable(person1);
         //cleanTable(pass1);
 
 
@@ -65,7 +84,6 @@ public class Main_One_to_One_UniDirect {
 //..................................................................................
 //      МЕТОДЫ
 //..................................................................................
-
 
     public static void saveMe(Object o) {
         session.beginTransaction();

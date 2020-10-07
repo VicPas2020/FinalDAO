@@ -1,7 +1,5 @@
 package jm.task.core.jdbc.util;
 
-import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Passport;
-import jm.task.core.jdbc.model.One_to_one_BiDirect.to_Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
