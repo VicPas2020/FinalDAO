@@ -1,46 +1,50 @@
-package jm.task.core.jdbc.model.One_to_one_BiDirect;
+package jm.task.core.jdbc.model.One_to_One_UniDirect;
 
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
 
 import java.util.List;
 
-public class Main_One_to_One_BiDirect {
+public class Main_One_to_One_UniDirect {
 
-   public static Session session = Util.createSessionHIBER(to_Person.class, to_Passport.class);
+   public static Session session = Util.createSessionHIBER(Person.class, to_Passport.class);
 
     public static void main(String[] args) {
 
 
         to_Passport pass1 = new to_Passport();
-        pass1.setSeria("ABC");
-        pass1.setNumber(123);
+        pass1.setSeria("DEF");
+        pass1.setNumber(456);
 
 
 
-        to_Person person = new to_Person();
-        person.setName("BBB");
-        person.setLastName("JJJ");
-        person.setAge((byte)8);
+        Person person = new Person();
+        person.setName("OOO");
+        person.setLastName("KKK");
+        person.setAge((byte)18);
         person.setPassport(pass1);
-
-        pass1.setPerson(person);
+        //pass1.setPerson(person);
 
 
 
          // 1
-        // СОХРАНЕНИЕ ЛЮБОГО из объектов
+        // СОХРАНЕНИЕ ЛЮБОГО из объектов = НО ТОЛЬКО ОДНОГО -
+
          saveMe(person);
+
+
+        //TODO: почему не пишет несколько подряд saveMe(person);
+        // saveMe(person); saveMe(person); saveMe(person);
 
 
         // 2
         // УДАЛЕНИЕ ПО ID
-        //removeObjectById(person, 2);
+        //removeObjectById(pass1, 2);
 
 
         // 3
         // получание всех данны таблиц по объекту
-//        getAllUsers(pass1);
+        //getAllUsers(person);
 
 
         // 4 очистка таблиц - не связаны - удаляются по одной

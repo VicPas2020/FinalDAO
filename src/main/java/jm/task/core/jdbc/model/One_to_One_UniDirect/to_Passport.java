@@ -18,27 +18,21 @@ public class to_Passport {
     @Column
     private int number;
 
-    @OneToOne (optional=true /*cascade=CascadeType.ALL*//*,  mappedBy="passport"*/)
-    @JoinColumn(name="person", referencedColumnName="id") //- можно заменить на нижеследующую PrimaryKeyJoinColumn
-    //@PrimaryKeyJoinColumn
-    private Person person;
+//    @OneToOne (optional=true /*cascade=CascadeType.ALL*//*,  mappedBy="passport"*/)
+//    @JoinColumn(name="person", referencedColumnName="id") //- можно заменить на нижеследующую PrimaryKeyJoinColumn
+//    //@PrimaryKeyJoinColumn
+//    private Person person;
 
 
     public to_Passport(String seria, int number, Person person) {
         this.seria = seria;
         this.number = number;
-        this.person = person;
+       // this.person = person;
     }
 
     public to_Passport() {}
 
-    public Person getPerson() {
-        return person;
-    }
 
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 
     public Long getId() {
         return id;
