@@ -1,11 +1,11 @@
-package jm.task.core.jdbc.model;
+package jm.task.core.jdbc.model.One_to_One_UniDirect;
 
 import jm.task.core.jdbc.TableName;
 
 import javax.persistence.*;
 
 @Entity
-@Table (name= TableName.ONE_to_one)
+@Table (name= TableName.ONE_to_one_Uni_Dir)
 public class Person {
 
     @Id
@@ -32,7 +32,7 @@ public class Person {
 //            inverseJoinColumns = @JoinColumn(name="passport_id")
 //
 //    )
-
+    @JoinColumn(name="passport_id", referencedColumnName="id")
     private Passport passport;
 
 

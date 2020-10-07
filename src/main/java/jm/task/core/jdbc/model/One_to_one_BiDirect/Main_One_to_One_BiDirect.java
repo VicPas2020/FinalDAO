@@ -1,20 +1,22 @@
-package jm.task.core.jdbc;
+package jm.task.core.jdbc.model.One_to_one_BiDirect;
 
+import jm.task.core.jdbc.ConnectorName;
+import jm.task.core.jdbc.TableName;
 import jm.task.core.jdbc.dao.PersonDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
 import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 
-public class Main {
+public class Main_One_to_One_BiDirect {
     public static void main(String[] args) {
 
 //        UserDao connection =  connectMeTo(ConnectorName.JDBC, TableName.ONE_to_one);
         UserDao connection =  connectMeTo(ConnectorName.HIBERNATE);
 
 
-        Passport pass = new Passport();
-        pass.setSeria("ABC");
-        pass.setNumber(123);
+        Passport pass1 = new Passport();
+        pass1.setSeria("ABC");
+        pass1.setNumber(123);
 
 
 
@@ -22,16 +24,16 @@ public class Main {
         person.setName("BBB");
         person.setLastName("JJJ");
         person.setAge((byte)8);
-        person.setPassport(pass);
+        person.setPassport(pass1);
 
-
+        pass1.setPerson(person);
 
 
 
        //  // переключаясь между  PersonDaoHibernateImpl и PassportsDaoHibernateImpl
         //        //можно сохранять и удалять паспорт вместе с человеком, и наоборот.
 
-        //connection.savePerson(person);
+        connection.savePerson(person);
 //        connection.savePassport(pass1);
 
 
@@ -60,20 +62,11 @@ public class Main {
         connection.closeConnection();
     }
 
-    static UserDao connectMeTo(ConnectorName connectorName, String tableName) {
-        if(connectorName.equals(ConnectorName.JDBC)) {
-            return null/*new UserDaoJDBCImpl(tableName)*/;
-        } else if (connectorName.equals(ConnectorName.HIBERNATE)) {
-            throw new RuntimeException("Не нужно указывать таблицу для Hibernate.");
-        } else {throw new RuntimeException();}
-    }
 
     static UserDao connectMeTo(ConnectorName connectorName) {
-        if(connectorName.equals(ConnectorName.JDBC)) {
-            throw new RuntimeException("Не указана таблица для JDBC");
-        } else if (connectorName.equals(ConnectorName.HIBERNATE)) {
+
             return new PersonDaoHibernateImpl(TableName.HIBERNATE);
 //            return new PassportsDaoHibernateImpl(TableName.HIBERNATE);
-        } else {throw new RuntimeException();}
+
     }
 }

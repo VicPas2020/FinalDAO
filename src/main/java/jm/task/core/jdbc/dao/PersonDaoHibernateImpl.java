@@ -1,7 +1,7 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.model.Passport;
-import jm.task.core.jdbc.model.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
@@ -47,8 +47,8 @@ public class PersonDaoHibernateImpl implements UserDao {
 
 
     @Override
-    public void savePerson(String name, String lastName, byte age, Passport pass) {
-        Person person = new Person(name, lastName ,age, pass);
+    public void savePerson(Person person) {
+        //Person person = new Person(name, lastName ,age, pass);
         session.beginTransaction();
         session.save(person);
         session.getTransaction().commit();
@@ -122,13 +122,16 @@ public class PersonDaoHibernateImpl implements UserDao {
         Util.closeHIBER();
     }
 
+
+
+
     @Override
-    public void savePassport(String seria, int number, Person person) {
-        throw new RuntimeException("пустой метод");
+    public void savePassport(Passport passport) {
+        throw new RuntimeException("пустой метод 7");
     }
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        throw new RuntimeException("пустой метод");
+        throw new RuntimeException("пустой метод 8");
     }
 
 }

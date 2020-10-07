@@ -1,11 +1,12 @@
-package jm.task.core.jdbc.model;
+package jm.task.core.jdbc.model.Many_to_Many;
 
 import jm.task.core.jdbc.TableName;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name= TableName.one_to_ONE)
+@Table(name= TableName.many_to_MANY)
 public class Passport {
 
     @Id
@@ -18,7 +19,7 @@ public class Passport {
     @Column
     private int number;
 
-    @OneToOne (optional=true /*cascade=CascadeType.ALL*/,  mappedBy="passport")
+    @OneToOne (optional=true /*cascade=CascadeType.ALL*//*,  mappedBy="passport"*/)
     @JoinColumn(name="person", referencedColumnName="id") //- можно заменить на нижеследующую PrimaryKeyJoinColumn
     //@PrimaryKeyJoinColumn
     private Person person;
@@ -27,7 +28,7 @@ public class Passport {
     public Passport(String seria, int number, Person person) {
         this.seria = seria;
         this.number = number;
-        //this.person = person;
+        this.person = person;
     }
 
     public Passport() {}

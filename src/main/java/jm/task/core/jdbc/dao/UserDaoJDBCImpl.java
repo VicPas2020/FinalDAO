@@ -1,7 +1,8 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.model.Passport;
-import jm.task.core.jdbc.model.Person;
+
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
@@ -147,12 +148,12 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     @Override
-    public void savePassport(String seria, int number, Person person) {
-
+    public void savePerson(Person person) {
+        throw new RuntimeException("пустой метод 6");
     }
     @Override
-    public void savePerson(String name, String lastName, byte age, Passport pass) {
-
+    public void savePassport(Passport passport) {
+        throw new RuntimeException("пустой метод 5");
     }
 
 }

@@ -1,7 +1,7 @@
 package jm.task.core.jdbc.util;
 
-import jm.task.core.jdbc.model.Passport;
-import jm.task.core.jdbc.model.Person;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Passport;
+import jm.task.core.jdbc.model.One_to_one_BiDirect.Person;
 import jm.task.core.jdbc.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -47,6 +47,9 @@ public class Util  {
             e.printStackTrace();
         }
     }
+
+
+
 
     private static SessionFactory factory;
     private static ServiceRegistry serviceRegistry;
